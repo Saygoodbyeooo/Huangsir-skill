@@ -6,7 +6,7 @@
 
 | Skill | 说明 | 状态 |
 |-------|------|------|
-| [thesis-format](./thesis-format/) | 江西财经大学本科毕业论文 DOCX 自动排版 | ✅ 可用 |
+| [thesis-format](./thesis-format/) | 江西财经大学现代经济管理学院本科毕业论文 DOCX 自动排版 | ✅ 可用 |
 | code-review | 代码审查规范 | 🚧 计划中 |
 | api-design | REST API 设计规范 | 🚧 计划中 |
 
