@@ -1,15 +1,14 @@
 """
-江西财经大学本科毕业论文格式配置
-所有格式参数集中管理，修改格式只需改此文件
+江西财经大学现代经济管理学院本科毕业论文格式配置
 """
 
 from docx.shared import Pt, Cm
 
-
 # ============================================================
-# 封面信息（用户必填）
+# 封面信息
 # ============================================================
 SCHOOL_NAME = "江西财经大学"
+COLLEGE_NAME = "现代经济管理学院"
 THESIS_TYPE = "普通本科毕业论文"
 TITLE = "基于XXX的XXX系统设计与实现"
 SUBTITLE = ""
@@ -19,7 +18,6 @@ DEPARTMENT = "计算机科学与技术学院"
 MAJOR = "软件工程"
 ADVISOR = "李四 教授"
 DATE = "2026年6月"
-
 
 # ============================================================
 # 页面设置
@@ -31,26 +29,23 @@ MARGIN_BOTTOM = Cm(2.54)
 MARGIN_LEFT = Cm(3.17)
 MARGIN_RIGHT = Cm(3.17)
 
-
 # ============================================================
-# 字体名称
+# 字体
 # ============================================================
 FONT_SONGTI = "宋体"
 FONT_HEITI = "黑体"
 FONT_KAITI = "楷体"
 FONT_TIMES = "Times New Roman"
 
-
 # ============================================================
-# 字号映射（中国字号 → pt）
+# 字号
 # ============================================================
-SIZE_SANHAO = Pt(16)       # ���号
-SIZE_XIAOSAN = Pt(15)      # 小三号
-SIZE_SIHAO = Pt(14)        # 四号
-SIZE_XIAOSI = Pt(12)       # 小四号
-SIZE_WUHAO = Pt(10.5)      # 五号
-SIZE_XIAOWU = Pt(9)        # 小五号
-
+SIZE_SANHAO = Pt(16)
+SIZE_XIAOSAN = Pt(15)
+SIZE_SIHAO = Pt(14)
+SIZE_XIAOSI = Pt(12)
+SIZE_WUHAO = Pt(10.5)
+SIZE_XIAOWU = Pt(9)
 
 # ============================================================
 # 行距
@@ -59,23 +54,20 @@ LINE_SPACING_22PT = Pt(22)
 LINE_SPACING_18PT = Pt(18)
 LINE_SPACING_1_5 = 1.5
 
+# ============================================================
+# 首行缩进
+# ============================================================
+FIRST_LINE_INDENT_CHARS = 2.0
 
 # ============================================================
-# 首行缩进（字符数，用于 w:firstLineChars）
+# 页眉（仅正文章节使用，参考文献/附录/致谢无页眉）
 # ============================================================
-FIRST_LINE_INDENT_CHARS = 2.0   # 2 字符
-
-
-# ============================================================
-# 页眉
-# ============================================================
-HEADER_TEXT = "江西财经大学普通本科毕业论文"
+HEADER_TEXT = "江西财经大学现代经济管理学院普通本科毕业论文"
 HEADER_FONT = FONT_SONGTI
 HEADER_FONT_SIZE = SIZE_WUHAO
 
-
 # ============================================================
-# 摘要部分
+# 摘要
 # ============================================================
 ABSTRACT_TITLE_CN = "摘要"
 ABSTRACT_TITLE_EN = "Abstract"
@@ -96,14 +88,12 @@ KEYWORD_LABEL_SIZE = SIZE_XIAOSI
 KEYWORD_BODY_FONT_CN = FONT_KAITI
 KEYWORD_BODY_FONT_EN = FONT_TIMES
 
-
 # ============================================================
-# 目录部分
+# 目录
 # ============================================================
 TOC_TITLE = "目录"
 TOC_TITLE_FONT = FONT_HEITI
 TOC_TITLE_SIZE = SIZE_XIAOSAN
-
 
 # ============================================================
 # 正文标题
@@ -112,27 +102,25 @@ BODY_TITLE_FONT = FONT_SONGTI
 BODY_TITLE_SIZE = SIZE_SANHAO
 BODY_TITLE_BOLD = True
 
+# 一级标题：小三宋体加粗，段前0.5行，段后0.5行
 HEADING1_FONT = FONT_SONGTI
 HEADING1_SIZE = SIZE_XIAOSAN
 HEADING1_BOLD = True
 HEADING1_LINE_SPACING = LINE_SPACING_1_5
-HEADING1_SPACE_BEFORE = Pt(7.8)    # 约 0.5 行
-HEADING1_SPACE_AFTER = Pt(7.8)
+HEADING1_SPACE_BEFORE_LINES = 50    # 0.5行 = 50 (单位: 1/100 行)
+HEADING1_SPACE_AFTER_LINES = 50
 
+# 二级标题：四号宋体加粗
 HEADING2_FONT = FONT_SONGTI
 HEADING2_SIZE = SIZE_SIHAO
 HEADING2_BOLD = True
 HEADING2_LINE_SPACING = LINE_SPACING_1_5
-HEADING2_SPACE_BEFORE = Pt(0)
-HEADING2_SPACE_AFTER = Pt(0)
 
+# 三级标题：小四号宋体加粗
 HEADING3_FONT = FONT_SONGTI
 HEADING3_SIZE = SIZE_XIAOSI
 HEADING3_BOLD = True
 HEADING3_LINE_SPACING = LINE_SPACING_1_5
-HEADING3_SPACE_BEFORE = Pt(0)
-HEADING3_SPACE_AFTER = Pt(0)
-
 
 # ============================================================
 # 正文
@@ -141,9 +129,6 @@ BODY_FONT_CN = FONT_SONGTI
 BODY_FONT_EN = FONT_TIMES
 BODY_SIZE = SIZE_XIAOSI
 BODY_LINE_SPACING = LINE_SPACING_22PT
-BODY_SPACE_BEFORE = Pt(0)
-BODY_SPACE_AFTER = Pt(0)
-
 
 # ============================================================
 # 参考文献
@@ -154,7 +139,6 @@ REF_FONT_EN = FONT_TIMES
 REF_SIZE = SIZE_WUHAO
 REF_LINE_SPACING = LINE_SPACING_18PT
 
-
 # ============================================================
 # 致谢
 # ============================================================
@@ -162,7 +146,6 @@ THANKS_TITLE = "致谢"
 THANKS_FONT = FONT_SONGTI
 THANKS_SIZE = SIZE_XIAOSI
 THANKS_LINE_SPACING = LINE_SPACING_22PT
-
 
 # ============================================================
 # 默认章节骨架
