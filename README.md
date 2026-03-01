@@ -6,9 +6,8 @@
 
 | Skill | 说明 | 状态 |
 |-------|------|------|
-| [thesis-format](./thesis-format/) | 江西财经大学现代经济管理学院本科毕业论文 DOCX 自动排版 | ✅ 可用 |
-| code-review | 代码审查规范 | 🚧 计划中 |
-| api-design | REST API 设计规范 | 🚧 计划中 |
+| [thesis-format-skill](./thesis-format-skill/) | 江西财经大学现代经济管理学院本科毕业论文 DOCX 自动排版 | ✅ 可用 |
+| [markdown-translator](./markdown-translator/) | 使用火山引擎 API 将英文 Markdown 学术论文翻译成中英双语对照文档 | ✅ 可用 |
 
 ## 🚀 如何使用
 
@@ -16,7 +15,7 @@
 
 1. Clone 本仓库：
 ```bash
-git clone https://github.com/Saygoodbyeooo/my-skills.git
+git clone https://github.com/Saygoodbyeooo/Huangsir-skill.git
 ```
 
 2. 根据你的工具，将对应 Skill 的 `SKILL.md` 复制到规则目录：
@@ -34,7 +33,7 @@ git clone https://github.com/Saygoodbyeooo/my-skills.git
 ### 方式 2：直接运行脚本
 
 ```bash
-cd thesis-format/scripts
+cd thesis-format-skill/scripts
 pip install -r ../requirements.txt
 python thesis_formatter.py
 ```
